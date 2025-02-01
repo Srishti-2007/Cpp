@@ -1,0 +1,66 @@
+/*#include<iostream>
+using namespace std;
+class time{
+    private:
+    int hr,min,sec;
+    public:
+    void settime(int hr, int min, int sec) {
+        this->hr=hr;
+        this->min=min;
+        this->sec=sec;
+    }
+    void gettime(){
+        cout<<"hr="<<hr<<" "<<"min="<<min<<" "<<"sec="<<sec<<endl;
+    }
+    void sethr(int hr) {this->hr=hr;}
+    void setmin(int min) {this->min=min;} //Setter
+    void setsec(int sec) {this->sec=sec;}
+    int gethr() {return hr;}
+    int getmin() {return min;}  //Getter
+    int getsec() {return sec;}
+    time* createtimearray(int size);
+    void sorttime(time t[], int size);
+     void showarraytime(time t[],int size);
+
+
+};
+time* createtimearray(int size) {
+    return new time[size];
+}
+void sorttime(time t[], int size) {
+    int temp;
+    for(int i=0;i<size-1;i++) {
+        for(int j=0;j<=size-i;j++) {
+            if(t[j+1]<t[j]) {
+            temp=t[j];
+            t[j]=t[j+1];
+            t[j+1]=temp; 
+            }
+        }
+    }
+} void showarraytime(time t[],int size) {
+    for(int i=0;i<size;i++) {
+        t[i].gettime();
+    }
+}
+int main() {
+     //::distance d; // class name distance conflicts with the standard library's function std::distance, which is used for calculating the distance between iterators. Since your program includes <iostream>, the std::distance function becomes visible, causing ambiguity.
+//we use name time also 
+     time d;
+    // Set time
+    d.settime(2, 45, 30);
+
+    // Get time
+    d.gettime();
+
+    // Update hours, minutes, and seconds
+    d.sethr(3);
+    d.setmin(50);
+    d.setsec(45);
+
+    // Get updated time
+    d.gettime();
+
+    return 0;
+}
+*/
